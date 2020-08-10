@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>blog.robertplant.io/blog/</loc>
+    <loc>/blog/</loc>
   </url>
   
   <url>
-    <loc>blog.robertplant.io/posts/</loc>
+    <loc>/posts/</loc>
   </url>
   
   <url>
-    <loc>blog.robertplant.io/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>blog.robertplant.io/posts/rust-testing/</loc>
+    <loc>/posts/rust-testing/</loc>
   </url>
   
   <url>
-    <loc>blog.robertplant.io/series/</loc>
+    <loc>/series/</loc>
   </url>
   
   <url>
-    <loc>blog.robertplant.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
