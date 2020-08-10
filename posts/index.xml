@@ -23,5 +23,31 @@ TODODatabase Testing TODOE2E Testing </description>
 ]]></content>
         </item>
         
+        <item>
+            <title>Syncing EteSync CalDav calendars into Spacemacs and OrgMode</title>
+            <link>/posts/caldav-emacs/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>/posts/caldav-emacs/</guid>
+            <description>Add additional packages  State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2020-08-10 Mon 22:11]  dotspacemacs-additional-packages &amp;#39;( org-caldav ) Configuring your Calendars (setq org-caldav-url &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-calendar-id &amp;#34;calendarId&amp;#34;) (setq org-caldav-check-dav &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-inbox &amp;#34;~/org/Calendar.org&amp;#34;) (setq org-icalendar-timezone &amp;#34;Europe/London&amp;#34;) (setq org-icalendar-date-time-format &amp;#34;;TZID=%Z:%Y%m%dT%H%M%S&amp;#34;) Where to get the data from !!! </description>
+            <content type="html"><![CDATA[<h2 id="add-additional-packages">Add additional packages</h2>
+<ul>
+<li>State &ldquo;DONE&rdquo;       from &ldquo;TODO&rdquo;       <!-- raw HTML omitted --><!-- raw HTML omitted -->[2020-08-10 Mon 22:11]<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">dotspacemacs-additional-packages <span style="color:#f92672">&#39;</span>(
+                                   org-caldav
+                                   )
+</code></pre></div><h2 id="configuring-your-calendars">Configuring your Calendars</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(setq org-caldav-url <span style="color:#e6db74">&#34;http://127.0.0.1:37358/rob@robertplant.io&#34;</span>)
+(setq org-caldav-calendar-id <span style="color:#e6db74">&#34;calendarId&#34;</span>)
+(setq org-caldav-check-dav <span style="color:#e6db74">&#34;http://127.0.0.1:37358/rob@robertplant.io&#34;</span>)
+(setq org-caldav-inbox <span style="color:#e6db74">&#34;~/org/Calendar.org&#34;</span>)
+(setq org-icalendar-timezone <span style="color:#e6db74">&#34;Europe/London&#34;</span>)
+(setq org-icalendar-date-time-format <span style="color:#e6db74">&#34;;TZID=%Z:%Y%m%dT%H%M%S&#34;</span>)
+</code></pre></div><h2 id="where-to-get-the-data-from">Where to get the data from !!!</h2>
+]]></content>
+        </item>
+        
     </channel>
 </rss>

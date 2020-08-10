@@ -21,5 +21,14 @@
 TODODatabase Testing TODOE2E Testing </description>
     </item>
     
+    <item>
+      <title>Syncing EteSync CalDav calendars into Spacemacs and OrgMode</title>
+      <link>/posts/caldav-emacs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/caldav-emacs/</guid>
+      <description>Add additional packages  State &amp;ldquo;DONE&amp;rdquo; from &amp;ldquo;TODO&amp;rdquo; [2020-08-10 Mon 22:11]  dotspacemacs-additional-packages &amp;#39;( org-caldav ) Configuring your Calendars (setq org-caldav-url &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-calendar-id &amp;#34;calendarId&amp;#34;) (setq org-caldav-check-dav &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-inbox &amp;#34;~/org/Calendar.org&amp;#34;) (setq org-icalendar-timezone &amp;#34;Europe/London&amp;#34;) (setq org-icalendar-date-time-format &amp;#34;;TZID=%Z:%Y%m%dT%H%M%S&amp;#34;) Where to get the data from !!! </description>
+    </item>
+    
   </channel>
 </rss>
