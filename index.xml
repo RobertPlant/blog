@@ -7,9 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 14 Aug 2020 14:21:00 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Emacs - Disable creation of lockfiles per project</title>
+      <link>/posts/emacs-lockfiles/</link>
+      <pubDate>Fri, 14 Aug 2020 14:21:00 +0100</pubDate>
+      
+      <guid>/posts/emacs-lockfiles/</guid>
+      <description>To disable lockfiles on Emacs project add this into .dir-locals.el
+((nil (create-lockfiles . nil) )) This can be very useful when working on CRA or Expo that watch for file changes and throw errors when the lock files are found and it attempts to read them, even though they are just symlinks.</description>
+    </item>
     
     <item>
       <title>Rust Testing</title>

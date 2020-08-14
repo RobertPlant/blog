@@ -6,7 +6,26 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Fri, 14 Aug 2020 14:21:00 +0100</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Emacs - Disable creation of lockfiles per project</title>
+            <link>/posts/emacs-lockfiles/</link>
+            <pubDate>Fri, 14 Aug 2020 14:21:00 +0100</pubDate>
+            
+            <guid>/posts/emacs-lockfiles/</guid>
+            <description>To disable lockfiles on Emacs project add this into .dir-locals.el
+((nil (create-lockfiles . nil) )) This can be very useful when working on CRA or Expo that watch for file changes and throw errors when the lock files are found and it attempts to read them, even though they are just symlinks.</description>
+            <content type="html"><![CDATA[<p>To disable lockfiles on Emacs project add this into <code>.dir-locals.el</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">((<span style="color:#66d9ef">nil</span>
+  (create-lockfiles <span style="color:#f92672">.</span> <span style="color:#66d9ef">nil</span>)
+  ))
+</code></pre></div><p>This can be very useful when working on <a href="https://create-react-app.dev/">CRA</a> or <a href="https://expo.io/">Expo</a> that watch for file
+changes and throw errors when the lock files are found and it attempts to read
+them, even though they are just symlinks.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Rust Testing</title>
