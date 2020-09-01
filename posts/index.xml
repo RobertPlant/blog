@@ -1,13 +1,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Rob</title>
+        <title>Posts on Robert Plant</title>
         <link>/posts/</link>
-        <description>Recent content in Posts on Rob</description>
+        <description>Recent content in Posts on Robert Plant</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 14 Aug 2020 14:21:00 +0100</lastBuildDate>
+        <lastBuildDate>Tue, 01 Sep 2020 17:24:00 +0100</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Syncing EteSync CalDav calendars into Spacemacs and OrgMode</title>
+            <link>/posts/caldav-emacs/</link>
+            <pubDate>Tue, 01 Sep 2020 17:24:00 +0100</pubDate>
+            
+            <guid>/posts/caldav-emacs/</guid>
+            <description>Add additional packages dotspacemacs-additional-packages &amp;#39;( org-caldav ) Configuring your Calendars (setq org-caldav-url &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-calendar-id &amp;#34;calendarId&amp;#34;) (setq org-caldav-check-dav &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-inbox &amp;#34;~/org/Calendar.org&amp;#34;) (setq org-icalendar-timezone &amp;#34;Europe/London&amp;#34;) (setq org-icalendar-date-time-format &amp;#34;;TZID=%Z:%Y%m%dT%H%M%S&amp;#34;) Setup EteSync DAV EteSyncDAV</description>
+            <content type="html"><![CDATA[<h2 id="add-additional-packages">Add additional packages</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">dotspacemacs-additional-packages <span style="color:#f92672">&#39;</span>(
+                                   org-caldav
+                                   )
+</code></pre></div><h2 id="configuring-your-calendars">Configuring your Calendars</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(setq org-caldav-url <span style="color:#e6db74">&#34;http://127.0.0.1:37358/rob@robertplant.io&#34;</span>)
+(setq org-caldav-calendar-id <span style="color:#e6db74">&#34;calendarId&#34;</span>)
+(setq org-caldav-check-dav <span style="color:#e6db74">&#34;http://127.0.0.1:37358/rob@robertplant.io&#34;</span>)
+(setq org-caldav-inbox <span style="color:#e6db74">&#34;~/org/Calendar.org&#34;</span>)
+(setq org-icalendar-timezone <span style="color:#e6db74">&#34;Europe/London&#34;</span>)
+(setq org-icalendar-date-time-format <span style="color:#e6db74">&#34;;TZID=%Z:%Y%m%dT%H%M%S&#34;</span>)
+</code></pre></div><h2 id="setup-etesync-dav">Setup EteSync DAV</h2>
+<p><a href="https://github.com/etesync/etesync-dav/blob/master/README.md#configuration-and-running">EteSyncDAV</a></p>
+]]></content>
+        </item>
         
         <item>
             <title>Emacs - Disable creation of lockfiles per project</title>
@@ -39,30 +62,6 @@ TODODatabase Testing TODOE2E Testing </description>
 <p>Test</p>
 <h2 id="database-testing"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Database Testing</h2>
 <h2 id="e2e-testing"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> E2E Testing</h2>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Syncing EteSync CalDav calendars into Spacemacs and OrgMode</title>
-            <link>/posts/caldav-emacs/</link>
-            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            
-            <guid>/posts/caldav-emacs/</guid>
-            <description>Add additional packages dotspacemacs-additional-packages &amp;#39;( org-caldav ) Configuring your Calendars (setq org-caldav-url &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-calendar-id &amp;#34;calendarId&amp;#34;) (setq org-caldav-check-dav &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-inbox &amp;#34;~/org/Calendar.org&amp;#34;) (setq org-icalendar-timezone &amp;#34;Europe/London&amp;#34;) (setq org-icalendar-date-time-format &amp;#34;;TZID=%Z:%Y%m%dT%H%M%S&amp;#34;) Login via the EteSync frontend Log in via the frontend </description>
-            <content type="html"><![CDATA[<h2 id="add-additional-packages">Add additional packages</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">dotspacemacs-additional-packages <span style="color:#f92672">&#39;</span>(
-                                   org-caldav
-                                   )
-</code></pre></div><h2 id="configuring-your-calendars">Configuring your Calendars</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(setq org-caldav-url <span style="color:#e6db74">&#34;http://127.0.0.1:37358/rob@robertplant.io&#34;</span>)
-(setq org-caldav-calendar-id <span style="color:#e6db74">&#34;calendarId&#34;</span>)
-(setq org-caldav-check-dav <span style="color:#e6db74">&#34;http://127.0.0.1:37358/rob@robertplant.io&#34;</span>)
-(setq org-caldav-inbox <span style="color:#e6db74">&#34;~/org/Calendar.org&#34;</span>)
-(setq org-icalendar-timezone <span style="color:#e6db74">&#34;Europe/London&#34;</span>)
-(setq org-icalendar-date-time-format <span style="color:#e6db74">&#34;;TZID=%Z:%Y%m%dT%H%M%S&#34;</span>)
-</code></pre></div><h2 id="login-via-the-etesync-frontend">Login via the EteSync frontend</h2>
-<p>Log in via the frontend
-<img src="/ox-hugo/2020-08-10-223037_396x441_scrot.png" alt=""></p>
 ]]></content>
         </item>
         

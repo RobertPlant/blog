@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rob</title>
+    <title>Robert Plant</title>
     <link>/</link>
-    <description>Recent content on Rob</description>
+    <description>Recent content on Robert Plant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 14 Aug 2020 14:21:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 17:24:00 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Syncing EteSync CalDav calendars into Spacemacs and OrgMode</title>
+      <link>/posts/caldav-emacs/</link>
+      <pubDate>Tue, 01 Sep 2020 17:24:00 +0100</pubDate>
+      
+      <guid>/posts/caldav-emacs/</guid>
+      <description>Add additional packages dotspacemacs-additional-packages &amp;#39;( org-caldav ) Configuring your Calendars (setq org-caldav-url &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-calendar-id &amp;#34;calendarId&amp;#34;) (setq org-caldav-check-dav &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-inbox &amp;#34;~/org/Calendar.org&amp;#34;) (setq org-icalendar-timezone &amp;#34;Europe/London&amp;#34;) (setq org-icalendar-date-time-format &amp;#34;;TZID=%Z:%Y%m%dT%H%M%S&amp;#34;) Setup EteSync DAV EteSyncDAV</description>
+    </item>
     
     <item>
       <title>Emacs - Disable creation of lockfiles per project</title>
@@ -30,15 +39,6 @@
       <guid>/posts/rust-testing/</guid>
       <description>TODOUnit Testing Test
 TODODatabase Testing TODOE2E Testing </description>
-    </item>
-    
-    <item>
-      <title>Syncing EteSync CalDav calendars into Spacemacs and OrgMode</title>
-      <link>/posts/caldav-emacs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/caldav-emacs/</guid>
-      <description>Add additional packages dotspacemacs-additional-packages &amp;#39;( org-caldav ) Configuring your Calendars (setq org-caldav-url &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-calendar-id &amp;#34;calendarId&amp;#34;) (setq org-caldav-check-dav &amp;#34;http://127.0.0.1:37358/rob@robertplant.io&amp;#34;) (setq org-caldav-inbox &amp;#34;~/org/Calendar.org&amp;#34;) (setq org-icalendar-timezone &amp;#34;Europe/London&amp;#34;) (setq org-icalendar-date-time-format &amp;#34;;TZID=%Z:%Y%m%dT%H%M%S&amp;#34;) Login via the EteSync frontend Log in via the frontend </description>
     </item>
     
   </channel>
