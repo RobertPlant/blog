@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 01 Sep 2020 17:24:00 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jan 2021 11:49:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>paswitch-rs</title>
+      <link>/posts/paswitch-rs/</link>
+      <pubDate>Tue, 26 Jan 2021 11:49:00 +0000</pubDate>
+      
+      <guid>/posts/paswitch-rs/</guid>
+      <description>I recently wrote a CLI tool (paswitch-rs) which combines the listing of pulse devices to the setting of a sink for all outputs. This is nothing new as you could manually change the devices via pavucontrol or using pactl list and finding your target sink and passing that id to paswitch. I have recently swapped over to using Pipewire and the number of pulse entities I now have has shot up from ~6 to over 40.</description>
+    </item>
+    
     <item>
       <title>Syncing EteSync CalDav calendars into Spacemacs and OrgMode</title>
       <link>/posts/caldav-emacs/</link>
@@ -25,15 +34,6 @@
       <guid>/posts/emacs-lockfiles/</guid>
       <description>To disable lockfiles on Emacs project add this into .dir-locals.el
 ((nil (create-lockfiles . nil) )) This can be very useful when working on CRA or Expo that watch for file changes and throw errors when the lock files are found and it attempts to read them, even though they are just symlinks.</description>
-    </item>
-    
-    <item>
-      <title>paswitch-rs</title>
-      <link>/posts/paswitch-rs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/paswitch-rs/</guid>
-      <description>I recently wrote a CLI tool (paswitch-rs) which combines the listing of pulse devices to the setting of a sink for all outputs. This is nothing new as you could manually change the devices via pavucontrol or using pactl list and finding your target sink and passing that id to paswitch. I have recently swapped over to using Pipewire and the number of pulse entities I now have has shot up from ~6 to over 40.</description>
     </item>
     
     <item>
