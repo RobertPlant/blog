@@ -51,6 +51,42 @@ them, even though they are just symlinks.</p>
         </item>
         
         <item>
+            <title>paswitch-rs</title>
+            <link>/posts/paswitch-rs/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>/posts/paswitch-rs/</guid>
+            <description>I recently wrote a CLI tool (paswitch-rs) which combines the listing of pulse devices to the setting of a sink for all outputs. This is nothing new as you could manually change the devices via pavucontrol or using pactl list and finding your target sink and passing that id to paswitch. I have recently swapped over to using Pipewire and the number of pulse entities I now have has shot up from ~6 to over 40.</description>
+            <content type="html"><![CDATA[<p>I recently wrote a CLI tool (<a href="https://github.com/RobertPlant/paswitch-rs">paswitch-rs</a>) which combines the listing of pulse
+devices to the setting of a sink for all outputs. This is nothing new as you
+could manually change the devices via <code>pavucontrol</code> or using <code>pactl list</code> and
+finding your target sink and passing that id to <code>paswitch</code>. I have recently
+swapped over to using <a href="https://pipewire.org/">Pipewire</a> and the number of pulse entities I now have has
+shot up from ~6 to over 40. The tool simply searches the <code>pactl</code> output and sets
+the source by its discovered id. This means that you can run a consistent
+command and know that the result will be the same, no matter if the pulse sink
+has changed id because you have added another audio interface.</p>
+<p>This does raise some interesting issues with testing the code, to make the tests
+run anywhere I could not list real pulse devices or change the default sink, as
+this would differ for every user building the system. I have extracted the
+<code>std::process::Command</code> logic into its own function and mocked the <code>pactl list</code>
+by returning this in the tests. It then performs the regex as normal and the
+test validates the correct ink by id.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">test</span>() {
+    <span style="color:#66d9ef">let</span> contents <span style="color:#f92672">=</span> fs::read_to_string(<span style="color:#e6db74">&#34;src/test/data/pactl-fiio.txt&#34;</span>)
+        .expect(<span style="color:#e6db74">&#34;Something went wrong reading the file&#34;</span>);
+
+    assert_eq<span style="color:#f92672">!</span>(
+        find(<span style="color:#f92672">&amp;</span>contents, <span style="color:#e6db74">&#34;Description&#34;</span>.to_string(), pattern).unwrap(),
+        <span style="color:#e6db74">&#34;43&#34;</span>
+    )
+}
+</code></pre></div><p>Ideally for future testing I would use a docker image that had pulse installed
+to verify that the real commands run and correctly set the pulse sink.</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Rust Testing</title>
             <link>/posts/rust-testing/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
