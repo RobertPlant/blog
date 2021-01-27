@@ -6,8 +6,46 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 26 Jan 2021 11:49:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 27 Jan 2021 22:48:00 +0000</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>DOOM Emacs JavaScript testing</title>
+            <link>/posts/doom-emacs-javascript-testing/</link>
+            <pubDate>Wed, 27 Jan 2021 22:48:00 +0000</pubDate>
+            
+            <guid>/posts/doom-emacs-javascript-testing/</guid>
+            <description>This uses dap-mode which is currently the only real solution to running a node debugger inside of Emacs. Realgud seems to have stopped supporting node years ago.
+Enable the debugger module in init.el, you should be using LSP.
+;; Added to ~/.doom.d/init.el (debugger +lsp) ; FIXME stepping through code, to help you add bugs You should also have LSP turned on for JavaScript
+;; Added to ~/.doom.d/init.el (javascript +lsp) ; all(hope(abandon(ye(who(enter(here)))))) You need to choose a backend to run DAP, dap-node allows setting breakpoints and debugging inside Emacs.</description>
+            <content type="html"><![CDATA[<p>This uses dap-mode which is currently the only real solution to running a node
+debugger inside of Emacs. Realgud seems to have stopped supporting node years
+ago.</p>
+<p>Enable the debugger module in init.el, you should be using LSP.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp"><span style="color:#75715e">;; Added to ~/.doom.d/init.el</span>
+(debugger
+ +lsp)              <span style="color:#75715e">; FIXME stepping through code, to help you add bugs</span>
+</code></pre></div><p>You should also have LSP turned on for JavaScript</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp"><span style="color:#75715e">;; Added to ~/.doom.d/init.el</span>
+(javascript
+ +lsp)              <span style="color:#75715e">; all(hope(abandon(ye(who(enter(here))))))</span>
+</code></pre></div><p>You need to choose a backend to run DAP, <code>dap-node</code> allows setting breakpoints
+and debugging inside Emacs.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">  <span style="color:#75715e">;; Added to ~/.doom.d/config.el</span>
+  (require <span style="color:#e6db74">&#39;dap-node</span>)
+</code></pre></div><p>Run <code>M-x dap-node-setup</code> and allow it to download the package from vs code
+store. It uses this to attach to the LSP debugger.</p>
+<p>Add a breakpoint somewhere to your code with <code>M-x dap-breakpoint-add</code></p>
+<p>Start the debugger with: <code>M-x dap-debug</code></p>
+<p>Select the run target you have setup, we described the node backend <code>Node Run configuration</code></p>
+<p>Select your <code>.js</code> file that runs via node</p>
+<figure>
+    <img src="/ox-hugo/dap-mode-js.png"/> 
+</figure>
+
+]]></content>
+        </item>
         
         <item>
             <title>paswitch-rs</title>

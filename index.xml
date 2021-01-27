@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 11:49:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jan 2021 22:48:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DOOM Emacs JavaScript testing</title>
+      <link>/posts/doom-emacs-javascript-testing/</link>
+      <pubDate>Wed, 27 Jan 2021 22:48:00 +0000</pubDate>
+      
+      <guid>/posts/doom-emacs-javascript-testing/</guid>
+      <description>This uses dap-mode which is currently the only real solution to running a node debugger inside of Emacs. Realgud seems to have stopped supporting node years ago.
+Enable the debugger module in init.el, you should be using LSP.
+;; Added to ~/.doom.d/init.el (debugger +lsp) ; FIXME stepping through code, to help you add bugs You should also have LSP turned on for JavaScript
+;; Added to ~/.doom.d/init.el (javascript +lsp) ; all(hope(abandon(ye(who(enter(here)))))) You need to choose a backend to run DAP, dap-node allows setting breakpoints and debugging inside Emacs.</description>
+    </item>
+    
     <item>
       <title>paswitch-rs</title>
       <link>/posts/paswitch-rs/</link>
